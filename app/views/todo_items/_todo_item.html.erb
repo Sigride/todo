@@ -6,7 +6,7 @@
       <% end %>
     </div>
     <div class="todo_item">
-      <p style="opacity: 0.4;"><strike><%= todo_item.content %></strike></strike></p>
+      <p style="opacity: 0.4;"><strike><%= todo_item.content %></strike></p>
     </div>
     <div class="trash">
       <%= link_to todo_list_todo_item_path(@todo_list, todo_item.id), method: :delete, data: { confirm: "Are you sure?"} do %>
@@ -25,6 +25,7 @@
     <div class="trash">
       <%= link_to todo_list_todo_item_path(@todo_list, todo_item.id), method: :delete, data: { confirm: "Are you sure?"} do %>
         <i class="fa fa-trash"></i>
-      <% end %>    </div>
+      <% end %>
+    </div>
   <% end %>
 </div>
